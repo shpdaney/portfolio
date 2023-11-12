@@ -1,0 +1,134 @@
+@import-normalize;
+
+#root {
+    margin: 0 auto;
+    padding: 2rem;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, .7);
+}
+@media (width <= 768px) {
+    #root {
+        width: 85vw;
+    }
+}
+
+.app {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    color: var(--sub-color);
+}
+
+.mainImage {
+    display: block;
+    width: 75%;
+    height: 70svh;
+    overflow: hidden;
+}
+
+.mainImage > source,
+.mainImage > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+.offer {
+    margin-top: 2rem;
+}
+.offerTitle {
+    margin: 0;
+    font-size: 5rem;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.offerSubTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.offerSubTitle > span {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+.offerSubTitle > h3 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+
+
+
+/*SKILLS*/
+.skillsSet {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.skillsList {
+    flex-basis: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.skill{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+.skillText {
+    margin: 0;
+    font-size: clamp(.7rem, 1.5vw, 1rem);
+    color: var(--sub-color);
+}
+.skillTextAccept {
+    margin: 0;
+    font-size: clamp(.7rem, 1.5vw, 1rem);
+    color: var(--accent-color);
+}
+.skillLogo {
+    width: 42px;
+}
+
+@media (width <= 768px) {
+    .skillText,
+    .skillTextAccept {
+        font-size: 1rem;
+    }
+}
+
+
+
+.skillsSetImage {
+    flex-basis: 40%;
+    height: auto;
+    overflow: hidden;
+}
+.skillsSetImage > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+@media (width <= 768px) {
+    .skillsSetImage {
+        display: none;
+    }
+}
+
+
